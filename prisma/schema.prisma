@@ -57,7 +57,7 @@ model Game {
 model Guess {
   id               String      @id @default(cuid())
   firstTeamPoints  Int
-  SecondTeamPoints Int
+  secondTeamPoints Int
   createdAt        DateTime    @default(now())
   gameId           String
   participant      Participant @relation(fields: [participantId], references: [id])
